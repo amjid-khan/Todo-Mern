@@ -40,7 +40,7 @@ input:focus {
   box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.2);
 }
 
-button {
+#add {
   width: 100%;
   max-width: 500px;
   padding: 12px 16px;
@@ -55,6 +55,47 @@ button {
   margin-top: 10px;
 }
 
-button:hover {
+#add:hover {
   background-color: #0056b3;
+}
+
+#todo-list {
+  border: 1px solid #ddd;          /* halka grey border */
+  background-color: #fff;          /* clean white background */
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 12px 20px;
+  border-radius: 8px;              /* thoda rounded corners */
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);  /* soft shadow */
+  margin-bottom: 12px;             /* spacing between todos */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  transition: box-shadow 0.3s ease;
+}
+
+#todo-list:hover {
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15); /* thoda strong shadow on hover */
+}
+
+#todo-list p {
+  margin: 0;
+  color: #333;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+#todo-list p.date {
+  color: #666;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#dlt-btn{
+  padding: 14px 40px;
+  background-color: red;
+  color: white;
+  border: none;
+  border-radius: 20px;
+  cursor: pointer;
 }
