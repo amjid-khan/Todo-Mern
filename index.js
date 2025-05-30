@@ -1,14 +1,14 @@
 import express from "express"
 import mongoose from "mongoose"
 import dotenv from "dotenv"
+import route from "./routes/routes.js"
 dotenv.config()
 const app = express()
 
+
 app.use(express.json());
 
-
-
-
+app.use("/api/todos", route)
 
 
 // connect mongoDB and start server
